@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>S&O Fearless Taekwondo Sports Club</title>
+    <!-- WEBSITE TITLE -->
+    <title>Fearless Taekwondo S&O Sports Club | Certificate Verification</title>
 
     <style>
         * {
@@ -14,177 +15,312 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fb;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
             color: #222;
             line-height: 1.6;
         }
 
+        /* HEADER */
         header {
-            background: #182848;
+            background: linear-gradient(135deg, #182848, #304f8c);
             color: white;
-            padding: 30px 20px;
             text-align: center;
+            padding: 42px 20px;
         }
 
         header h1 {
-            font-size: 30px;
+            font-size: 32px;
+            font-weight: 700;
             margin-bottom: 8px;
         }
 
         header p {
-            font-size: 16px;
+            font-size: 17px;
+            opacity: 0.95;
         }
 
+        /* NAVIGATION */
         nav {
-            background: #101b33;
+            background: #101a30;
             text-align: center;
-            padding: 12px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            padding: 14px 10px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 12px;
             font-weight: bold;
+            margin: 0 12px;
+            font-size: 15px;
         }
 
         nav a:hover {
-            color: #ffd700;
+            color: #ffc107;
         }
 
+        /* MAIN CONTAINER */
         .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 25px 15px;
+            width: 92%;
+            max-width: 950px;
+            margin: 30px auto;
         }
 
-        .hero {
+        /* WELCOME */
+        .welcome {
             background: white;
-            padding: 35px 20px;
             text-align: center;
+            padding: 30px 20px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
-        .hero h2 {
+        .welcome h2 {
             color: #182848;
             margin-bottom: 10px;
         }
 
+        .welcome p {
+            color: #555;
+        }
+
+        /* SECTION */
         .section {
             background: white;
-            padding: 25px;
+            padding: 30px 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
         .section h2 {
+            text-align: center;
             color: #182848;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
-        .verification {
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 22px;
+        }
+
+        /* VERIFICATION */
+        .verification-box {
             text-align: center;
         }
 
-        .verification input {
+        .verification-box input {
             width: 90%;
-            max-width: 500px;
-            padding: 14px;
-            border: 1px solid #ccc;
-            border-radius: 7px;
+            max-width: 600px;
+            padding: 15px;
+            border: 1px solid #d1d1d1;
+            border-radius: 8px;
             font-size: 16px;
-            margin: 10px 0;
+            outline: none;
+            margin-bottom: 15px;
         }
 
-        button {
+        .verification-box input:focus {
+            border-color: #304f8c;
+        }
+
+        .verify-button {
+            display: inline-block;
             background: #182848;
             color: white;
             border: none;
-            padding: 13px 25px;
-            border-radius: 7px;
+            padding: 14px 28px;
+            border-radius: 8px;
             font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
         }
 
-        button:hover {
-            background: #101b33;
+        .verify-button:hover {
+            background: #101a30;
         }
 
+        /* RESULT */
         #result {
-            margin-top: 20px;
-            padding: 15px;
             display: none;
-            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            margin: 22px auto 0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
         }
 
-        .valid {
-            background: #e7f8ed;
-            border: 1px solid #39a95a;
-            color: #176b30;
+        .valid-result {
+            background: #e9f8ee;
+            border: 1px solid #38a169;
+            color: #176b36;
         }
 
-        .invalid {
-            background: #fdeaea;
+        .invalid-result {
+            background: #fff0f0;
             border: 1px solid #d9534f;
-            color: #a52825;
+            color: #9b2421;
+        }
+
+        .result-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .result-line {
+            margin: 5px 0;
+        }
+
+        /* OWNER BUTTON */
+        .owner-button-container {
+            text-align: center;
+            margin: 5px 0 25px;
+        }
+
+        .owner-button {
+            background: #f2a900;
+            color: #111;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .owner-button:hover {
+            background: #d99400;
+        }
+
+        /* OWNER INFORMATION */
+        #ownerInfo {
+            display: none;
         }
 
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 15px;
+            margin-top: 20px;
         }
 
-        .info-box {
+        .info-card {
             background: #f5f7fb;
             padding: 18px;
-            border-radius: 8px;
+            border-radius: 10px;
+            border-left: 4px solid #182848;
         }
 
-        .info-box strong {
+        .info-card strong {
             display: block;
             color: #182848;
             margin-bottom: 5px;
         }
 
+        /* ABOUT */
+        .about-text {
+            text-align: center;
+            color: #555;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* FEATURES */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            background: #f5f7fb;
+            padding: 20px 12px;
+            border-radius: 10px;
+        }
+
+        .feature-icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .feature h3 {
+            color: #182848;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 8px 0;
+        }
+
+        /* FOOTER */
         footer {
-            background: #182848;
+            background: #101a30;
             color: white;
             text-align: center;
             padding: 25px 15px;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
-        .badge {
-            display: inline-block;
-            background: #182848;
-            color: white;
-            padding: 8px 14px;
-            border-radius: 20px;
-            margin: 5px;
+        footer p {
+            margin: 5px 0;
             font-size: 14px;
         }
 
-        @media (max-width: 600px) {
+        /* MOBILE */
+        @media (max-width: 700px) {
+
             header h1 {
-                font-size: 23px;
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 14px;
             }
 
             nav a {
                 display: inline-block;
-                margin: 5px 7px;
-                font-size: 14px;
+                margin: 5px 6px;
+                font-size: 13px;
+            }
+
+            .container {
+                width: 94%;
             }
 
             .section {
-                padding: 18px;
+                padding: 24px 15px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .verification-box input {
+                width: 100%;
+            }
+
+            #result {
+                width: 100%;
             }
         }
     </style>
@@ -192,109 +328,188 @@
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
+
     <h1>FEARLESS TAEKWONDO S&O SPORTS CLUB</h1>
-    <p>Official Certificate Verification & Club Information</p>
+
+    <p>
+        Official Certificate Verification Portal
+    </p>
+
 </header>
 
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <nav>
+
     <a href="#home">Home</a>
+
     <a href="#verification">Certificate Verification</a>
+
     <a href="#about">About</a>
-    <a href="#information">Information</a>
+
+    <a href="#owner">Owner / Coach</a>
+
     <a href="#contact">Contact</a>
+
 </nav>
 
-<div class="container">
 
-    <!-- HOME -->
-    <section class="hero" id="home">
+<main class="container">
+
+
+    <!-- =========================
+         HOME
+    ========================= -->
+
+    <section class="welcome" id="home">
+
         <h2>Welcome to Fearless Taekwondo S&O Sports Club</h2>
 
         <p>
-            Welcome to the official website of
-            <strong>Fearless Taekwondo S&O Sports Club</strong>.
+            Welcome to the official certificate verification
+            portal of Fearless Taekwondo S&O Sports Club.
         </p>
 
         <p>
-            This website provides information about the club
-            and allows certificate holders to verify their certificates.
+            Use this website to verify certificates issued
+            by the club.
         </p>
+
     </section>
 
 
-    <!-- CERTIFICATE VERIFICATION -->
-    <section class="section verification" id="verification">
+    <!-- =========================
+         CERTIFICATE VERIFICATION
+    ========================= -->
 
-        <h2>Certificate Verification</h2>
+    <section class="section" id="verification">
 
-        <p>
-            Enter your certificate number below to verify your certificate.
+        <h2>Verify Your Certificate</h2>
+
+        <p class="section-subtitle">
+            Enter your certificate ID below
         </p>
 
-        <input
-            type="text"
-            id="certificateNumber"
-            placeholder="Enter Certificate Number"
-        >
 
-        <br>
+        <div class="verification-box">
 
-        <button onclick="verifyCertificate()">
-            Verify Certificate
-        </button>
+            <input
+                type="text"
+                id="certificateID"
+                placeholder="Enter Certificate ID"
+                autocomplete="off"
+            >
+
+            <br>
+
+            <button
+                class="verify-button"
+                onclick="verifyCertificate()"
+            >
+                Verify Certificate
+            </button>
+
+        </div>
+
 
         <div id="result"></div>
 
     </section>
 
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
+    <!-- =========================
+         OWNER BUTTON
+    ========================= -->
 
-        <h2>About Fearless Taekwondo S&O Sports Club</h2>
+    <div class="owner-button-container">
 
-        <p>
-            Fearless Taekwondo S&O Sports Club is dedicated to
-            promoting Taekwondo, sports, discipline, fitness and
-            self-confidence among students.
+        <button
+            class="owner-button"
+            onclick="toggleOwnerInfo()"
+        >
+            Owner / Coach Information
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         OWNER INFORMATION
+    ========================= -->
+
+    <section
+        class="section"
+        id="ownerInfo"
+    >
+
+        <h2>Owner / Coach Information</h2>
+
+        <p class="section-subtitle">
+            Official club information
         </p>
 
-        <br>
-
-        <p>
-            The club provides training and certification for eligible
-            students according to its training and certification programs.
-        </p>
-
-    </section>
-
-
-    <!-- CLUB INFORMATION -->
-    <section class="section" id="information">
-
-        <h2>Club Information</h2>
 
         <div class="info-grid">
 
-            <div class="info-box">
+            <div class="info-card">
+
                 <strong>Club Name</strong>
+
                 Fearless Taekwondo S&O Sports Club
+
             </div>
 
-            <div class="info-box">
-                <strong>Activity</strong>
+
+            <div class="info-card">
+
+                <strong>Owner / Coach</strong>
+
+                Add Owner / Coach Name
+
+            </div>
+
+
+            <div class="info-card">
+
+                <strong>Training</strong>
+
                 Taekwondo & Sports Training
+
             </div>
 
-            <div class="info-box">
-                <strong>Certificate Service</strong>
-                Certificate Verification
-            </div>
 
-            <div class="info-box">
-                <strong>Location</strong>
+            <div class="info-card">
+
+                <strong>Address</strong>
+
                 Add your official address here
+
+            </div>
+
+
+            <div class="info-card">
+
+                <strong>Phone</strong>
+
+                Add your official phone number
+
+            </div>
+
+
+            <div class="info-card">
+
+                <strong>Email</strong>
+
+                Add your official email address
+
             </div>
 
         </div>
@@ -302,53 +517,109 @@
     </section>
 
 
-    <!-- ACHIEVEMENTS / RECOGNITION -->
-    <section class="section">
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
-        <h2>Recognition & Achievements</h2>
+    <section class="section" id="about">
 
-        <p>
-            The following section can be used to display the club's
-            genuine registrations, affiliations, awards, certifications
-            or trademarks.
+        <h2>About Our Club</h2>
+
+        <p class="about-text">
+
+            Fearless Taekwondo S&O Sports Club is dedicated
+            to Taekwondo and sports training, with a focus
+            on discipline, fitness, confidence and skill
+            development.
+
         </p>
 
-        <br>
 
-        <span class="badge">Taekwondo Training</span>
-        <span class="badge">Sports Activities</span>
-        <span class="badge">Certificate Verification</span>
+        <div class="features">
 
-        <!-- Add only genuine registrations/trademarks here -->
+            <div class="feature">
+
+                <div class="feature-icon">🥋</div>
+
+                <h3>Taekwondo Training</h3>
+
+                <p>
+                    Training and skill development
+                    in Taekwondo.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🏆</div>
+
+                <h3>Achievements</h3>
+
+                <p>
+                    Space to display genuine
+                    achievements and awards.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">✅</div>
+
+                <h3>Certificate Verification</h3>
+
+                <p>
+                    Verify certificates using
+                    their unique certificate ID.
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section class="section contact" id="contact">
 
         <h2>Contact Us</h2>
 
         <p>
-            <strong>Fearless Taekwondo S&O Sports Club</strong>
+            <strong>
+                Fearless Taekwondo S&O Sports Club
+            </strong>
         </p>
 
         <p>
-            📍 Address: Add your official address here
+            📍 Address:
+            <span>Add your official address here</span>
         </p>
 
         <p>
-            📞 Phone: Add your official phone number here
+            📞 Phone:
+            <span>Add your official phone number here</span>
         </p>
 
         <p>
-            📧 Email: Add your official email address here
+            📧 Email:
+            <span>Add your official email here</span>
         </p>
 
     </section>
 
-</div>
+</main>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -357,7 +628,7 @@
     </p>
 
     <p>
-        Certificate Verification Portal
+        Official Certificate Verification Portal
     </p>
 
 </footer>
@@ -365,119 +636,262 @@
 
 <script>
 
-    /*
-       CERTIFICATE DATABASE
+/* =====================================================
+   CERTIFICATE DATABASE
 
-       Add your certificates here.
+   ADD YOUR REAL CERTIFICATES HERE.
 
-       Example:
+   Example:
 
-       "FTSO-001": {
-           name: "Student Name",
-           course: "Taekwondo Training",
-           duration: "6 Months",
-           issueDate: "05 August 2026",
-           status: "Valid"
-       }
-    */
+   "FTSO-2026-001": {
+       name: "Student Name",
+       course: "Taekwondo Training",
+       duration: "6 Months",
+       startDate: "01 February 2026",
+       completionDate: "04 August 2026",
+       issueDate: "05 August 2026",
+       status: "Valid"
+   }
 
-    const certificates = {
-
-        "FTSO-001": {
-            name: "Student Name",
-            course: "Taekwondo Training",
-            duration: "6 Months",
-            issueDate: "05 August 2026",
-            status: "Valid"
-        },
-
-        "FTSO-002": {
-            name: "Another Student",
-            course: "Taekwondo Training",
-            duration: "6 Months",
-            issueDate: "05 August 2026",
-            status: "Valid"
-        }
-
-    };
+===================================================== */
 
 
-    function verifyCertificate() {
-
-        const number =
-            document.getElementById("certificateNumber")
-            .value
-            .trim()
-            .toUpperCase();
-
-        const result =
-            document.getElementById("result");
+const certificates = {
 
 
-        if (number === "") {
+    "FTSO-2026-001": {
 
-            result.style.display = "block";
+        name: "Sample Student",
 
-            result.className = "invalid";
+        course: "Taekwondo Training",
 
-            result.innerHTML =
-                "⚠️ Please enter a certificate number.";
+        duration: "6 Months",
 
-            return;
-        }
+        startDate: "01 February 2026",
+
+        completionDate: "04 August 2026",
+
+        issueDate: "05 August 2026",
+
+        status: "Valid"
+
+    },
 
 
-        const certificate = certificates[number];
+    "FTSO-2026-002": {
 
+        name: "Sample Student 2",
 
-        if (certificate) {
+        course: "Taekwondo Training",
 
-            result.style.display = "block";
+        duration: "6 Months",
 
-            result.className = "valid";
+        startDate: "01 February 2026",
 
-            result.innerHTML = `
-                <h3>✅ Certificate Verified</h3>
+        completionDate: "04 August 2026",
 
-                <p><strong>Certificate Number:</strong>
-                ${number}</p>
+        issueDate: "05 August 2026",
 
-                <p><strong>Student Name:</strong>
-                ${certificate.name}</p>
+        status: "Valid"
 
-                <p><strong>Course:</strong>
-                ${certificate.course}</p>
-
-                <p><strong>Course Duration:</strong>
-                ${certificate.duration}</p>
-
-                <p><strong>Date of Issue:</strong>
-                ${certificate.issueDate}</p>
-
-                <p><strong>Status:</strong>
-                ${certificate.status}</p>
-            `;
-
-        } else {
-
-            result.style.display = "block";
-
-            result.className = "invalid";
-
-            result.innerHTML = `
-                <h3>❌ Certificate Not Found</h3>
-
-                <p>
-                    The certificate number entered could not be
-                    found in our verification database.
-                </p>
-
-                <p>
-                    Please check the certificate number and try again.
-                </p>
-            `;
-        }
     }
+
+};
+
+
+/* =====================================================
+   CERTIFICATE VERIFICATION FUNCTION
+===================================================== */
+
+
+function verifyCertificate() {
+
+
+    const input =
+        document.getElementById("certificateID");
+
+
+    const result =
+        document.getElementById("result");
+
+
+    const certificateID =
+        input.value.trim().toUpperCase();
+
+
+    /* EMPTY INPUT */
+
+    if (certificateID === "") {
+
+        result.style.display = "block";
+
+        result.className = "invalid-result";
+
+        result.innerHTML = `
+
+            <div class="result-title">
+                ⚠️ Certificate ID Required
+            </div>
+
+            <p>
+                Please enter your certificate ID
+                and try again.
+            </p>
+
+        `;
+
+        return;
+
+    }
+
+
+    /* FIND CERTIFICATE */
+
+    const certificate =
+        certificates[certificateID];
+
+
+    /* CERTIFICATE FOUND */
+
+    if (certificate) {
+
+
+        result.style.display = "block";
+
+        result.className = "valid-result";
+
+
+        result.innerHTML = `
+
+            <div class="result-title">
+                ✅ Certificate Verified
+            </div>
+
+            <div class="result-line">
+                <strong>Certificate ID:</strong>
+                ${certificateID}
+            </div>
+
+            <div class="result-line">
+                <strong>Student Name:</strong>
+                ${certificate.name}
+            </div>
+
+            <div class="result-line">
+                <strong>Course:</strong>
+                ${certificate.course}
+            </div>
+
+            <div class="result-line">
+                <strong>Duration:</strong>
+                ${certificate.duration}
+            </div>
+
+            <div class="result-line">
+                <strong>Start Date:</strong>
+                ${certificate.startDate}
+            </div>
+
+            <div class="result-line">
+                <strong>Completion Date:</strong>
+                ${certificate.completionDate}
+            </div>
+
+            <div class="result-line">
+                <strong>Issue Date:</strong>
+                ${certificate.issueDate}
+            </div>
+
+            <div class="result-line">
+                <strong>Status:</strong>
+                ${certificate.status}
+            </div>
+
+        `;
+
+    }
+
+
+    /* CERTIFICATE NOT FOUND */
+
+    else {
+
+
+        result.style.display = "block";
+
+        result.className = "invalid-result";
+
+
+        result.innerHTML = `
+
+            <div class="result-title">
+                ❌ Certificate Not Found
+            </div>
+
+            <p>
+                We could not find a certificate
+                with this ID.
+            </p>
+
+            <p>
+                Please check the certificate ID
+                and try again.
+            </p>
+
+        `;
+
+    }
+
+}
+
+
+/* =====================================================
+   OWNER INFORMATION SHOW / HIDE
+===================================================== */
+
+
+function toggleOwnerInfo() {
+
+
+    const ownerInfo =
+        document.getElementById("ownerInfo");
+
+
+    if (ownerInfo.style.display === "block") {
+
+        ownerInfo.style.display = "none";
+
+    }
+
+    else {
+
+        ownerInfo.style.display = "block";
+
+        ownerInfo.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+}
+
+
+/* =====================================================
+   ENTER KEY = VERIFY CERTIFICATE
+===================================================== */
+
+
+document
+    .getElementById("certificateID")
+    .addEventListener("keypress", function(event) {
+
+        if (event.key === "Enter") {
+
+            verifyCertificate();
+
+        }
+
+    });
 
 </script>
 
