@@ -1,0 +1,14 @@
+[
+  {
+    "certificateId": "2529-SOFT-SC-001",
+    "studentName": "Rahul Sharma",
+    "dateOfBirth": "15/04/2010",
+    "dateOfExam": "20/07/2026",
+    "currentBelt": "Black Belt - 1st Dan",
+    "dateOfIssue": "25/07/2026",
+    "aadhaarVerified": true,
+    "coachName": "Actual Coach Name",
+    "coachDesignation": "Taekwondo Coach",
+    "status": "Valid"
+  }
+]
