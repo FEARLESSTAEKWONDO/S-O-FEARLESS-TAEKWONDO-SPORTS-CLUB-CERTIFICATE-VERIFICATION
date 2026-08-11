@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>
-S-O FEARLESS TAEKWONDO SPORTS CLUB | Certificate Verification
-</title>
+<title>S-O FEARLESS TAEKWONDO SPORTS CLUB | Certificate Verification</title>
 
 <style>
 
@@ -44,7 +39,18 @@ header {
     background: linear-gradient(135deg, #182848, #304f8c);
     color: white;
     text-align: center;
-    padding: 42px 20px;
+    padding: 30px 20px 40px;
+}
+
+.club-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
 }
 
 header h1 {
@@ -91,13 +97,13 @@ nav a:hover {
 
 .container {
     width: 92%;
-    max-width: 950px;
+    max-width: 1000px;
     margin: 30px auto;
 }
 
 
 /* =========================
-   COMMON SECTIONS
+   SECTIONS
 ========================= */
 
 .welcome,
@@ -176,7 +182,7 @@ nav a:hover {
 
 
 /* =========================
-   VERIFICATION RESULT
+   RESULT
 ========================= */
 
 #result {
@@ -212,7 +218,7 @@ nav a:hover {
 
 
 /* =========================
-   OWNER BUTTON
+   COACH BUTTON
 ========================= */
 
 .owner-button-container {
@@ -237,11 +243,18 @@ nav a:hover {
 
 
 /* =========================
-   OWNER SECTION
+   COACH SECTION
 ========================= */
 
 #ownerInfo {
     display: none;
+}
+
+.coaches-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
 }
 
 
@@ -251,7 +264,7 @@ nav a:hover {
 
 .coach-photo {
     text-align: center;
-    margin: 10px 0 25px;
+    margin: 5px 0 25px;
 }
 
 .coach-photo img {
@@ -268,13 +281,6 @@ nav a:hover {
 /* =========================
    COACH CARDS
 ========================= */
-
-.coaches-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
 
 .coach-card {
     background: #f5f7fb;
@@ -339,25 +345,6 @@ nav a:hover {
 
 
 /* =========================
-   CREDENTIALS
-========================= */
-
-.credential-card {
-    background: #f5f7fb;
-    padding: 18px;
-    border-radius: 10px;
-    border-left: 4px solid #f2a900;
-    margin-top: 15px;
-}
-
-.credential-card strong {
-    display: block;
-    color: #182848;
-    margin-bottom: 5px;
-}
-
-
-/* =========================
    ABOUT
 ========================= */
 
@@ -401,6 +388,25 @@ nav a:hover {
 .feature p {
     font-size: 14px;
     color: #666;
+}
+
+
+/* =========================
+   CREDENTIALS
+========================= */
+
+.credential-card {
+    background: #f5f7fb;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #f2a900;
+    margin-top: 15px;
+}
+
+.credential-card strong {
+    display: block;
+    color: #182848;
+    margin-bottom: 5px;
 }
 
 
@@ -459,6 +465,11 @@ footer p {
         font-size: 14px;
     }
 
+    .club-logo {
+        width: 105px;
+        height: 105px;
+    }
+
     nav a {
         display: inline-block;
         margin: 5px 6px;
@@ -513,6 +524,12 @@ footer p {
 ========================= -->
 
 <header>
+
+    <img
+        src="images/logo.jpg"
+        alt="S-O Fearless Taekwondo Sports Club Logo"
+        class="club-logo"
+    >
 
     <h1>
         S-O FEARLESS TAEKWONDO SPORTS CLUB
@@ -626,7 +643,7 @@ footer p {
 
 
 <!-- =========================
-     OWNER BUTTON
+     COACH BUTTON
 ========================= -->
 
 <div class="owner-button-container">
@@ -674,9 +691,7 @@ footer p {
     <div class="coaches-container">
 
 
-        <!-- =====================
-             COACH SHUBHAM
-        ====================== -->
+        <!-- COACH SHUBHAM -->
 
         <div class="coach-card">
 
@@ -685,23 +700,34 @@ footer p {
             </h3>
 
             <p>
-                <strong>Taekwondo Qualification:</strong><br>
+                <strong>
+                    Taekwondo Qualification:
+                </strong><br>
+
                 2nd Dan Black Belt –
                 Kukkiwon, South Korea
             </p>
 
             <p>
-                <strong>Professional Qualifications:</strong><br>
+                <strong>
+                    Professional Qualifications:
+                </strong><br>
+
                 DMLT, D.PE, P.T.C.PED
             </p>
 
             <p>
-                <strong>Training Experience:</strong><br>
+                <strong>
+                    Training Experience:
+                </strong><br>
+
                 2015 – Continuing
             </p>
 
             <p>
-                <strong>Contact:</strong><br>
+                <strong>
+                    Contact:
+                </strong><br>
 
                 <a href="tel:9922484409">
                     9922484409
@@ -715,7 +741,9 @@ footer p {
             </p>
 
             <p>
-                <strong>Email:</strong><br>
+                <strong>
+                    Email:
+                </strong><br>
 
                 <a href="mailto:gandhishubham70@gmail.com">
                     gandhishubham70@gmail.com
@@ -725,9 +753,7 @@ footer p {
         </div>
 
 
-        <!-- =====================
-             COACH OMKAR
-        ====================== -->
+        <!-- COACH OMKAR -->
 
         <div class="coach-card">
 
@@ -736,23 +762,30 @@ footer p {
             </h3>
 
             <p>
-                <strong>Taekwondo Qualification:</strong><br>
+                <strong>
+                    Taekwondo Qualification:
+                </strong><br>
+
                 1st Dan Black Belt –
                 Kukkiwon, South Korea
             </p>
 
             <p>
-                <strong>Professional Qualifications:</strong><br>
+                <strong>
+                    Professional Qualifications:
+                </strong><br>
+
                 B.Com, P.T.C.P.Ed, D.P.E
             </p>
 
             <p>
-                <strong>Contact:</strong><br>
+                <strong>
+                    Contact:
+                </strong><br>
 
                 <a href="tel:7798568623">
                     7798568623
                 </a>
-
             </p>
 
         </div>
@@ -764,7 +797,6 @@ footer p {
     <!-- GENERAL CLUB INFORMATION -->
 
     <div class="info-grid">
-
 
         <div class="info-card">
 
@@ -810,7 +842,6 @@ footer p {
             </a>
 
         </div>
-
 
     </div>
 
@@ -892,7 +923,6 @@ footer p {
             </p>
 
         </div>
-
 
     </div>
 
@@ -984,7 +1014,6 @@ footer p {
 
     </div>
 
-
 </section>
 
 
@@ -1058,7 +1087,6 @@ footer p {
 
     </p>
 
-
 </section>
 
 
@@ -1111,7 +1139,6 @@ const certificates = {
         status: "Valid"
 
     },
-
 
     "FTSO-2026-002": {
 
@@ -1295,7 +1322,7 @@ function toggleOwnerInfo() {
 
 
 /* =========================
-   ENTER KEY
+   ENTER KEY = VERIFY
 ========================= */
 
 document
@@ -1315,7 +1342,5 @@ document
 
 </script>
 
-
 </body>
-
 </html>
