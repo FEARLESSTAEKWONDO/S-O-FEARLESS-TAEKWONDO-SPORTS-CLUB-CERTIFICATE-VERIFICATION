@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>S&O FEARLESS TAEKWONDO SPORTS CLUB | Certificate Verification</title>
+<title>S-O FEARLESS TAEKWONDO SPORTS CLUB | Certificate Verification</title>
 
 <style>
+
+/* =========================
+   BASIC
+========================= */
 
 * {
     box-sizing: border-box;
@@ -20,56 +25,134 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f4f6f8;
     color: #222;
-    min-height: 100vh;
+    line-height: 1.6;
 }
 
+
 /* =========================
-   HEADER
+   HEADER / STARTING LOGO
 ========================= */
 
 header {
     background: linear-gradient(135deg, #07152d, #123d70);
     color: white;
     text-align: center;
-    padding: 28px 15px;
+    padding: 35px 15px 40px;
 }
 
 .header-logo {
-    width: 105px;
-    height: 105px;
+    width: 125px;
+    height: 125px;
     object-fit: contain;
-    border-radius: 50%;
     display: block;
-    margin: 0 auto 12px auto;
+    margin: 0 auto 18px auto;
+    border-radius: 50%;
     background: white;
     padding: 5px;
+    border: 4px solid #f5a623;
 }
 
 header h1 {
-    font-size: 25px;
-    margin-bottom: 7px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 
 header p {
-    font-size: 14px;
-    opacity: 0.9;
+    font-size: 17px;
+    opacity: 0.95;
 }
 
+
 /* =========================
-   MAIN
+   NAVIGATION
+========================= */
+
+nav {
+    background: #07152d;
+    text-align: center;
+    padding: 15px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 12px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f5a623;
+}
+
+
+/* =========================
+   MAIN CONTAINER
 ========================= */
 
 main {
-    max-width: 700px;
-    margin: 40px auto;
+    max-width: 1000px;
+    margin: 35px auto;
     padding: 0 15px;
 }
 
+
 /* =========================
-   VERIFICATION BOX
+   GENERAL SECTION
+========================= */
+
+.section {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.10);
+}
+
+.section h2 {
+    color: #123d70;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home-section {
+    text-align: center;
+}
+
+.home-section p {
+    color: #555;
+    margin: 8px 0;
+}
+
+.training-text {
+    font-weight: bold;
+    color: #123d70 !important;
+    font-size: 18px;
+}
+
+
+/* =========================
+   VERIFICATION
 ========================= */
 
 .verify-box {
@@ -78,6 +161,7 @@ main {
     padding: 30px 25px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.10);
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .verify-box h2 {
@@ -93,7 +177,8 @@ main {
 
 input {
     width: 100%;
-    padding: 14px;
+    max-width: 650px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
@@ -107,7 +192,8 @@ input:focus {
 
 .verify-btn {
     width: 100%;
-    padding: 14px;
+    max-width: 650px;
+    padding: 15px;
     border: none;
     border-radius: 8px;
     background: #123d70;
@@ -121,6 +207,7 @@ input:focus {
     background: #0b2b50;
 }
 
+
 /* =========================
    RESULT
 ========================= */
@@ -132,14 +219,14 @@ input:focus {
 .result-box {
     background: white;
     border-radius: 15px;
-    padding: 28px 20px;
+    padding: 30px 20px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.10);
     text-align: center;
 }
 
 .verified-circle {
-    width: 120px;
-    height: 120px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     background: #e9f8ef;
     border: 4px solid #28a745;
@@ -151,17 +238,21 @@ input:focus {
 }
 
 .verified-circle img {
-    width: 90px;
-    height: 90px;
+    width: 105px;
+    height: 105px;
     object-fit: contain;
     border-radius: 50%;
 }
 
 .verified-title {
     color: #218838;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.verified-message {
+    color: #555;
 }
 
 .certificate-details {
@@ -175,7 +266,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     gap: 15px;
-    padding: 10px 0;
+    padding: 11px 0;
     border-bottom: 1px solid #eee;
 }
 
@@ -190,7 +281,7 @@ input:focus {
 }
 
 .invalid {
-    background: #fff;
+    background: white;
     border-radius: 15px;
     padding: 30px 20px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.10);
@@ -208,7 +299,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     color: #dc3545;
-    font-size: 45px;
+    font-size: 42px;
     font-weight: bold;
 }
 
@@ -217,29 +308,166 @@ input:focus {
     margin-bottom: 10px;
 }
 
+
 /* =========================
-   OWNER BUTTON
+   COACHES
 ========================= */
 
-.owner-section {
-    text-align: center;
-    margin: 28px 0;
+.coaches-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.owner-button {
-    display: inline-block;
-    background: #f5a623;
-    color: #000;
-    padding: 13px 24px;
-    border-radius: 8px;
-    text-decoration: none;
+.coach-card {
+    background: #f5f7fb;
+    padding: 22px;
+    border-radius: 12px;
+    border-left: 5px solid #123d70;
+}
+
+.coach-card h3 {
+    color: #123d70;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.coach-card p {
+    margin: 9px 0;
+    color: #444;
+}
+
+.coach-card strong {
+    color: #123d70;
+}
+
+.coach-card a {
+    color: #123d70;
     font-weight: bold;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    text-decoration: none;
+    word-break: break-word;
 }
 
-.owner-button:hover {
-    background: #e59512;
+.coach-card a:hover {
+    text-decoration: underline;
 }
+
+
+/* =========================
+   CLUB INFORMATION
+========================= */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.info-card {
+    background: #f5f7fb;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #123d70;
+}
+
+.info-card strong {
+    display: block;
+    color: #123d70;
+    margin-bottom: 5px;
+}
+
+.info-card a {
+    color: #123d70;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-text {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #555;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.feature {
+    background: #f5f7fb;
+    padding: 22px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.feature h3 {
+    color: #123d70;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* =========================
+   REGISTRATIONS
+========================= */
+
+.credential-card {
+    background: #f5f7fb;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #f5a623;
+    margin-top: 15px;
+}
+
+.credential-card strong {
+    display: block;
+    color: #123d70;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 12px 0;
+}
+
+.contact a {
+    color: #123d70;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 /* =========================
    FOOTER
@@ -250,36 +478,69 @@ footer {
     background: #07152d;
     color: white;
     text-align: center;
-    padding: 25px 15px;
+    padding: 28px 15px;
     font-size: 13px;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 footer strong {
     color: #f5a623;
 }
 
+
 /* =========================
    MOBILE
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
-    header h1 {
-        font-size: 20px;
+    header {
+        padding: 30px 12px 35px;
     }
 
     .header-logo {
-        width: 90px;
-        height: 90px;
+        width: 110px;
+        height: 110px;
+    }
+
+    header h1 {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        margin: 5px 7px;
+        font-size: 14px;
     }
 
     main {
         margin-top: 25px;
+        padding: 0 12px;
     }
 
+    .section,
     .verify-box {
-        padding: 25px 18px;
+        padding: 25px 17px;
+    }
+
+    .coaches-container {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
     }
 
     .detail-row {
@@ -291,91 +552,644 @@ footer strong {
         text-align: left;
     }
 
+    .verified-circle {
+        width: 115px;
+        height: 115px;
+    }
+
+    .verified-circle img {
+        width: 95px;
+        height: 95px;
+    }
+
 }
 
 </style>
 
 </head>
 
+
 <body>
 
-<!-- =========================
-     HEADER / STARTING LOGO
-========================= -->
+
+<!-- =====================================================
+     STARTING HEADER WITH LOGO
+===================================================== -->
 
 <header>
 
+    <!-- YOUR LOGO -->
+    <!-- GitHub folder: image -->
+    <!-- File name: logo.jpg -->
+
     <img
         src="image/logo.jpg"
-        alt="S&O Fearless Taekwondo Sports Club Logo"
+        alt="S-O Fearless Taekwondo Sports Club Logo"
         class="header-logo"
     >
 
-    <h1>S&O FEARLESS TAEKWONDO SPORTS CLUB</h1>
+    <h1>
+        S-O FEARLESS TAEKWONDO SPORTS CLUB
+    </h1>
 
-    <p>Certificate Verification Portal</p>
+    <p>
+        Official Certificate Verification Portal
+    </p>
 
 </header>
 
 
-<!-- =========================
-     MAIN
-========================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#verification">
+        Certificate Verification
+    </a>
+
+    <a href="#about">
+        About
+    </a>
+
+    <a href="#coaches">
+        Coaches
+    </a>
+
+    <a href="#credentials">
+        Registrations
+    </a>
+
+    <a href="#contact">
+        Contact
+    </a>
+
+</nav>
+
 
 <main>
 
-    <div class="verify-box">
 
-        <h2>Verify Your Certificate</h2>
+<!-- =====================================================
+     HOME
+===================================================== -->
 
-        <p>
-            Enter your certificate ID below to verify the authenticity
-            of your certificate.
-        </p>
+<section
+    class="section home-section"
+    id="home"
+>
 
-        <input
-            type="text"
-            id="certificateId"
-            placeholder="Enter Certificate ID"
-            autocomplete="off"
-        >
+    <h2>
+        Welcome to S-O Fearless Taekwondo Sports Club
+    </h2>
 
-        <button
-            class="verify-btn"
-            onclick="verifyCertificate()">
-            Verify Certificate
-        </button>
+    <p>
+        Welcome to the official certificate verification
+        portal of S-O Fearless Taekwondo Sports Club.
+    </p>
+
+    <p>
+        Use this website to verify certificates issued
+        by the club.
+    </p>
+
+    <p class="training-text">
+        Training Since 2015
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     CERTIFICATE VERIFICATION
+===================================================== -->
+
+<section
+    class="verify-box"
+    id="verification"
+>
+
+    <h2>
+        Verify Your Certificate
+    </h2>
+
+    <p>
+        Enter your certificate ID below to verify the
+        authenticity of your certificate.
+    </p>
+
+    <input
+        type="text"
+        id="certificateId"
+        placeholder="Enter Certificate ID"
+        autocomplete="off"
+    >
+
+    <button
+        class="verify-btn"
+        onclick="verifyCertificate()"
+    >
+        Verify Certificate
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     RESULT
+===================================================== -->
+
+<div id="result"></div>
+
+
+<!-- =====================================================
+     COACH INFORMATION
+===================================================== -->
+
+<section
+    class="section"
+    id="coaches"
+>
+
+    <h2>
+        Coach Information
+    </h2>
+
+    <p class="section-subtitle">
+        S-O Fearless Taekwondo Sports Club
+    </p>
+
+
+    <div class="coaches-container">
+
+
+        <!-- =========================
+             COACH SHUBHAM
+        ========================== -->
+
+        <div class="coach-card">
+
+            <h3>
+                Coach Shubham K. Gandhi
+            </h3>
+
+            <p>
+
+                <strong>
+                    Taekwondo Qualification:
+                </strong>
+
+                <br>
+
+                2nd Dan Black Belt –
+                Kukkiwon, South Korea
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Professional Qualifications:
+                </strong>
+
+                <br>
+
+                DMLT, D.PE, P.T.C.PED
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Training Experience:
+                </strong>
+
+                <br>
+
+                2015 – Continuing
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Contact:
+                </strong>
+
+                <br>
+
+                <a href="tel:9922484409">
+                    9922484409
+                </a>
+
+                &nbsp; | &nbsp;
+
+                <a href="tel:9011191202">
+                    9011191202
+                </a>
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Email:
+                </strong>
+
+                <br>
+
+                <a href="mailto:gandhishubham70@gmail.com">
+                    gandhishubham70@gmail.com
+                </a>
+
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             COACH OMKAR
+        ========================== -->
+
+        <div class="coach-card">
+
+            <h3>
+                Coach Omkar P. Joshi
+            </h3>
+
+            <p>
+
+                <strong>
+                    Taekwondo Qualification:
+                </strong>
+
+                <br>
+
+                1st Dan Black Belt –
+                Kukkiwon, South Korea
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Professional Qualifications:
+                </strong>
+
+                <br>
+
+                B.Com, P.T.C.P.Ed, D.P.E
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Contact:
+                </strong>
+
+                <br>
+
+                <a href="tel:7798568623">
+                    7798568623
+                </a>
+
+            </p>
+
+        </div>
 
     </div>
 
 
-    <!-- RESULT WILL APPEAR HERE -->
+    <!-- =========================
+         CLUB INFORMATION
+    ========================== -->
 
-    <div id="result"></div>
+    <div class="info-grid">
 
 
-    <!-- OWNER / COACH BUTTON -->
+        <div class="info-card">
 
-    <div class="owner-section">
+            <strong>
+                Club Name
+            </strong>
 
-        <a
-            href="owner.html"
-            class="owner-button">
-            Owner / Coach Information
+            S-O Fearless Taekwondo Sports Club
+
+        </div>
+
+
+        <div class="info-card">
+
+            <strong>
+                Training Since
+            </strong>
+
+            2015 – Continuing
+
+        </div>
+
+
+        <div class="info-card">
+
+            <strong>
+                Location
+            </strong>
+
+            Sangamner, Maharashtra, India
+
+        </div>
+
+
+        <div class="info-card">
+
+            <strong>
+                Email
+            </strong>
+
+            <a href="mailto:gandhishubham70@gmail.com">
+                gandhishubham70@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="section"
+    id="about"
+>
+
+    <h2>
+        About Our Club
+    </h2>
+
+    <p class="about-text">
+
+        S-O Fearless Taekwondo Sports Club is dedicated
+        to Taekwondo and sports training, with a focus
+        on discipline, fitness, confidence, self-defence
+        and skill development.
+
+    </p>
+
+
+    <div class="features">
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🥋
+            </div>
+
+            <h3>
+                Taekwondo Training
+            </h3>
+
+            <p>
+                Taekwondo training and
+                skill development.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                🏆
+            </div>
+
+            <h3>
+                Sports & Fitness
+            </h3>
+
+            <p>
+                Sports, fitness and
+                physical development.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ✅
+            </div>
+
+            <h3>
+                Certificate Verification
+            </h3>
+
+            <p>
+                Verify certificates using
+                their unique certificate ID.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     REGISTRATIONS & CREDENTIALS
+===================================================== -->
+
+<section
+    class="section"
+    id="credentials"
+>
+
+    <h2>
+        Registrations & Credentials
+    </h2>
+
+    <p class="section-subtitle">
+        Official registrations and credentials
+    </p>
+
+
+    <div class="credential-card">
+
+        <strong>
+            🏛️ Trademark Registration
+        </strong>
+
+        Government of India
+
+        <br>
+
+        <small>
+            Trademark registration details can be
+            displayed here.
+        </small>
+
+    </div>
+
+
+    <div class="credential-card">
+
+        <strong>
+            🏢 Udyam Registration
+        </strong>
+
+        Government of India
+
+        <br>
+
+        <small>
+            Udyam registration details can be
+            displayed here.
+        </small>
+
+    </div>
+
+
+    <div class="credential-card">
+
+        <strong>
+            🥋 Kukkiwon Qualifications
+        </strong>
+
+        <br>
+
+        Coach Shubham K. Gandhi –
+        2nd Dan Black Belt,
+        Kukkiwon, South Korea.
+
+        <br><br>
+
+        Coach Omkar P. Joshi –
+        1st Dan Black Belt,
+        Kukkiwon, South Korea.
+
+    </div>
+
+
+    <div class="credential-card">
+
+        <strong>
+            📅 Training Since
+        </strong>
+
+        2015 – Continuing
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    class="section contact"
+    id="contact"
+>
+
+    <h2>
+        Contact Us
+    </h2>
+
+
+    <p>
+
+        <strong>
+            S-O Fearless Taekwondo Sports Club
+        </strong>
+
+    </p>
+
+
+    <p>
+
+        📍 <strong>Address:</strong>
+
+        <br>
+
+        Sr No. 114/102, Janta Nagar,
+        Purva Galli No. 7,
+        Sangamner,
+        Ahmednagar,
+        Maharashtra,
+        India – 422605
+
+    </p>
+
+
+    <p>
+
+        📞 <strong>Phone:</strong>
+
+        <br>
+
+        <a href="tel:9922484409">
+            9922484409
         </a>
 
-    </div>
+        &nbsp; | &nbsp;
+
+        <a href="tel:9011191202">
+            9011191202
+        </a>
+
+        <br>
+
+        <a href="tel:7798568623">
+            7798568623
+        </a>
+
+    </p>
+
+
+    <p>
+
+        📧 <strong>Email:</strong>
+
+        <br>
+
+        <a href="mailto:gandhishubham70@gmail.com">
+            gandhishubham70@gmail.com
+        </a>
+
+    </p>
+
+</section>
+
 
 </main>
 
 
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
-    <strong>S&O FEARLESS TAEKWONDO SPORTS CLUB</strong>
+    <strong>
+        S-O FEARLESS TAEKWONDO SPORTS CLUB
+    </strong>
 
     <br>
 
@@ -387,102 +1201,164 @@ footer strong {
 
     <br>
 
-    2015 – Still Continue
+    Coach Omkar P. Joshi –
+    1st Dan Black Belt, Kukkiwon
 
     <br>
 
-    © 2026 S&O Fearless Taekwondo Sports Club
+    Training Since 2015
+
+    <br>
+
+    © 2026 S-O Fearless Taekwondo Sports Club
 
 </footer>
 
 
 <script>
 
-/* =========================================
+
+/* =====================================================
    CERTIFICATE VERIFICATION
-========================================= */
+===================================================== */
 
 async function verifyCertificate() {
 
-    const input = document.getElementById("certificateId");
-    const result = document.getElementById("result");
+    const input =
+        document.getElementById("certificateId");
 
-    const certificateId = input.value.trim();
+    const result =
+        document.getElementById("result");
 
-    /* Empty input */
+    const certificateId =
+        input.value.trim();
+
+
+    /* =========================
+       EMPTY INPUT
+    ========================= */
 
     if (certificateId === "") {
 
         result.innerHTML = `
+
             <div class="invalid">
 
-                <div class="invalid-icon">!</div>
+                <div class="invalid-icon">
+                    !
+                </div>
 
-                <h3>Certificate ID Required</h3>
+                <h3>
+                    Certificate ID Required
+                </h3>
 
-                <p>Please enter your Certificate ID.</p>
+                <p>
+                    Please enter your Certificate ID.
+                </p>
 
             </div>
+
         `;
 
         return;
     }
 
 
-    /* Loading */
+    /* =========================
+       LOADING
+    ========================= */
 
     result.innerHTML = `
+
         <div class="result-box">
-            <p>Checking certificate...</p>
+
+            <p>
+                Checking certificate...
+            </p>
+
         </div>
+
     `;
 
 
     try {
 
-        const response = await fetch("certificates.json");
+
+        /* =========================
+           LOAD JSON DATABASE
+        ========================= */
+
+        const response =
+            await fetch("certificates.json");
+
 
         if (!response.ok) {
-            throw new Error("Certificate database could not be loaded.");
+
+            throw new Error(
+                "Certificate database could not be loaded."
+            );
+
         }
 
-        const certificates = await response.json();
 
+        const certificates =
+            await response.json();
 
-        /* Find certificate */
 
         let certificate = null;
 
+
+        /* =========================
+           ARRAY DATABASE
+        ========================= */
+
         if (Array.isArray(certificates)) {
 
-            certificate = certificates.find(cert => {
-
-                const id =
-                    cert.id ??
-                    cert.certificateId ??
-                    cert.certificateID ??
-                    cert["Certificate ID"];
-
-                return String(id || "").trim().toLowerCase()
-                    === certificateId.toLowerCase();
-
-            });
-
-        } else {
-
             certificate =
-                certificates[certificateId] ||
-                certificates[certificateId.toUpperCase()] ||
-                certificates[certificateId.toLowerCase()];
+                certificates.find(cert => {
+
+                    const id =
+                        cert.id ??
+                        cert.certificateId ??
+                        cert.certificateID ??
+                        cert["Certificate ID"];
+
+                    return String(id || "")
+                        .trim()
+                        .toLowerCase()
+                        ===
+                        certificateId
+                            .toLowerCase();
+
+                });
 
         }
 
 
-        /* =====================================
+        /* =========================
+           OBJECT DATABASE
+        ========================= */
+
+        else {
+
+            certificate =
+                certificates[certificateId] ||
+                certificates[
+                    certificateId.toUpperCase()
+                ] ||
+                certificates[
+                    certificateId.toLowerCase()
+                ];
+
+        }
+
+
+        /* =================================================
            CERTIFICATE FOUND
-        ===================================== */
+        ================================================= */
 
         if (certificate) {
+
 
             const id =
                 certificate.id ??
@@ -491,6 +1367,7 @@ async function verifyCertificate() {
                 certificate["Certificate ID"] ??
                 certificateId;
 
+
             const name =
                 certificate.name ??
                 certificate.studentName ??
@@ -498,11 +1375,13 @@ async function verifyCertificate() {
                 certificate["Student Name"] ??
                 "—";
 
+
             const course =
                 certificate.course ??
                 certificate.courseName ??
                 certificate["Course"] ??
                 "—";
+
 
             const duration =
                 certificate.duration ??
@@ -510,11 +1389,13 @@ async function verifyCertificate() {
                 certificate["Course Duration"] ??
                 "—";
 
+
             const startDate =
                 certificate.startDate ??
                 certificate.dateOfStart ??
                 certificate["Date of Start"] ??
                 "—";
+
 
             const completionDate =
                 certificate.completionDate ??
@@ -523,6 +1404,7 @@ async function verifyCertificate() {
                 certificate["Date of Complete"] ??
                 "—";
 
+
             const issueDate =
                 certificate.issueDate ??
                 certificate.dateOfIssue ??
@@ -530,33 +1412,42 @@ async function verifyCertificate() {
                 "—";
 
 
+            /* =========================
+               SHOW VERIFIED RESULT
+            ========================= */
+
             result.innerHTML = `
 
                 <div class="result-box">
 
-                    <!-- LOGO INSIDE VERIFIED CIRCLE -->
+
+                    <!-- YOUR ACTUAL LOGO -->
 
                     <div class="verified-circle">
 
                         <img
                             src="image/logo.jpg"
-                            alt="Verified S&O Logo"
+                            alt="S-O Fearless Logo"
                         >
 
                     </div>
 
 
                     <div class="verified-title">
-                        Certificate Verified
+                        ✅ Certificate Verified
                     </div>
 
 
-                    <p>
-                        This certificate has been successfully verified.
+                    <p class="verified-message">
+
+                        This certificate has been
+                        successfully verified.
+
                     </p>
 
 
                     <div class="certificate-details">
+
 
                         <div class="detail-row">
 
@@ -648,6 +1539,7 @@ async function verifyCertificate() {
 
                         </div>
 
+
                     </div>
 
                 </div>
@@ -657,9 +1549,9 @@ async function verifyCertificate() {
         }
 
 
-        /* =====================================
+        /* =================================================
            CERTIFICATE NOT FOUND
-        ===================================== */
+        ================================================= */
 
         else {
 
@@ -676,11 +1568,15 @@ async function verifyCertificate() {
                     </h3>
 
                     <p>
-                        No certificate was found with this Certificate ID.
+                        No certificate was found with
+                        this Certificate ID.
                     </p>
 
                     <p style="margin-top:10px;">
-                        Please check your Certificate ID and try again.
+
+                        Please check your Certificate ID
+                        and try again.
+
                     </p>
 
                 </div>
@@ -690,7 +1586,14 @@ async function verifyCertificate() {
         }
 
 
-    } catch (error) {
+    }
+
+
+    /* =================================================
+       ERROR
+    ================================================= */
+
+    catch (error) {
 
         console.error(error);
 
@@ -723,25 +1626,29 @@ async function verifyCertificate() {
 }
 
 
-/* =========================================
-   ENTER KEY SUPPORT
-========================================= */
+/* =====================================================
+   ENTER KEY
+===================================================== */
 
-document.getElementById("certificateId").addEventListener(
-    "keydown",
-    function(event) {
+document
+    .getElementById("certificateId")
+    .addEventListener(
+        "keydown",
+        function(event) {
 
-        if (event.key === "Enter") {
-            verifyCertificate();
+            if (event.key === "Enter") {
+
+                verifyCertificate();
+
+            }
+
         }
-
-    }
-);
+    );
 
 
-/* =========================================
-   SECURITY / HTML ESCAPE
-========================================= */
+/* =====================================================
+   HTML SECURITY
+===================================================== */
 
 function escapeHTML(value) {
 
@@ -755,6 +1662,7 @@ function escapeHTML(value) {
 }
 
 </script>
+
 
 </body>
 
