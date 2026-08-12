@@ -51,6 +51,8 @@ body {
     height: 190px;
     object-fit: contain;
     display: block;
+    border: none;
+    outline: none;
 }
 
 
@@ -560,6 +562,7 @@ footer p {
         width: 150px;
         height: 150px;
     }
+
 }
 
 
@@ -598,19 +601,19 @@ footer p {
 
 
 <!-- =====================================================
-     LOGO
-     
-     YOUR LOGO IS INSIDE THE IMAGE FOLDER:
+     STARTING LOGO
 
+     EXACT FILE LOCATION:
      image/logo.jpg
 
 ===================================================== -->
 
-<div class="start-logo">
+<div class="start-logo" id="logoArea">
 
     <img
-        src="image/logo.jpg"
+        src="./image/logo.jpg"
         alt="S-O Fearless Taekwondo Sports Club Logo"
+        onerror="document.getElementById('logoArea').style.display='none';"
     >
 
 </div>
@@ -778,35 +781,30 @@ footer p {
     <!-- =================================================
          COACH PHOTO
 
-         IMPORTANT:
-         FILE NAME = coach photo.jpg
-         LOCATION = image folder
-
-         Therefore:
-         image/coach%20photo.jpg
+         EXACT FILE:
+         image/coach photo.jpg
     ================================================== -->
 
     <div class="coach-photo-container">
 
         <img
-            src="image/coach%20photo.jpg"
+            src="./image/coach%20photo.jpg"
             alt="Coach - S-O Fearless Taekwondo Sports Club"
             class="coach-photo"
+            onerror="this.style.display='none';"
         >
 
     </div>
 
 
     <!-- =================================================
-         COACH CARDS
+         COACHES
     ================================================== -->
 
     <div class="coaches-container">
 
 
-        <!-- =================================================
-             COACH SHUBHAM K. GANDHI
-        ================================================== -->
+        <!-- COACH SHUBHAM -->
 
         <div class="coach-card">
 
@@ -892,16 +890,13 @@ footer p {
         </div>
 
 
-        <!-- =================================================
-             COACH OMKAR P. JOSHI
-        ================================================== -->
+        <!-- COACH OMKAR -->
 
         <div class="coach-card">
 
             <h3>
                 Coach Omkar P. Joshi
             </h3>
-
 
             <p>
 
@@ -1019,7 +1014,6 @@ footer p {
         About Our Club
     </h2>
 
-
     <p class="about-text">
 
         S-O Fearless Taekwondo Sports Club is dedicated
@@ -1092,7 +1086,7 @@ footer p {
 
 
 <!-- =====================================================
-     REGISTRATIONS & CREDENTIALS
+     REGISTRATIONS
 ===================================================== -->
 
 <section
@@ -1341,14 +1335,11 @@ function verifyCertificate() {
     const result =
         document.getElementById("result");
 
-
     const enteredID =
         inputElement.value
         .trim()
         .toUpperCase();
 
-
-    /* EMPTY */
 
     if (enteredID === "") {
 
@@ -1373,8 +1364,6 @@ function verifyCertificate() {
     }
 
 
-    /* FIND CERTIFICATE */
-
     const certificate =
         certificates.find(function(item) {
 
@@ -1395,8 +1384,6 @@ function verifyCertificate() {
 
         });
 
-
-    /* NOT FOUND */
 
     if (!certificate) {
 
@@ -1429,10 +1416,6 @@ function verifyCertificate() {
 
     }
 
-
-    /* =================================================
-       VERIFIED CERTIFICATE
-    ================================================= */
 
     const certificateNo =
         certificate.certificateNo ||
@@ -1532,8 +1515,8 @@ function verifyCertificate() {
 
         <div class="result-line">
             <strong>
-                ✓ This certificate record has been found
-                in the club verification database.
+                ✓ This certificate record has been
+                found in the club verification database.
             </strong>
         </div>
 
@@ -1560,7 +1543,7 @@ document
 
 
 /* =====================================================
-   COACH INFORMATION TOGGLE
+   COACH INFORMATION
 ===================================================== */
 
 function toggleOwnerInfo() {
@@ -1606,7 +1589,7 @@ function toggleOwnerInfo() {
 
 
 /* =====================================================
-   SECURITY / HTML ESCAPE
+   HTML SECURITY
 ===================================================== */
 
 function escapeHTML(value) {
