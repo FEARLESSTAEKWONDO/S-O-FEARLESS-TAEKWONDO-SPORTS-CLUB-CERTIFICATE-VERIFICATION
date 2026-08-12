@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>S-O FEARLESS TAEKWONDO SPORTS CLUB | Certificate Verification</title>
@@ -32,6 +34,25 @@ body {
 
 
 /* =========================
+   STARTING LOGO
+========================= */
+
+.starting-logo {
+    background: #ffffff;
+    text-align: center;
+    padding: 25px 15px 20px;
+}
+
+.starting-logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* =========================
    HEADER
 ========================= */
 
@@ -42,17 +63,15 @@ header {
     padding: 30px 20px 40px;
 }
 
-/* LOGO */
 .club-logo {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     object-fit: contain;
     display: block;
-    margin: 0 auto 18px;
+    margin: 0 auto 15px;
     border-radius: 50%;
     background: white;
     padding: 5px;
-    border: 4px solid #f2a900;
 }
 
 header h1 {
@@ -261,22 +280,22 @@ nav a:hover {
 
 
 /* =========================
-   COACH PHOTOS
+   COACH PHOTO
 ========================= */
 
 .coach-photo {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 5px 0 25px;
 }
 
 .coach-photo img {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #f2a900;
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto;
 }
 
 
@@ -459,8 +478,22 @@ footer p {
 
 @media (max-width: 700px) {
 
+    .starting-logo {
+        padding: 20px 10px 15px;
+    }
+
+    .starting-logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header {
+        padding: 25px 15px 35px;
+    }
+
     header h1 {
         font-size: 24px;
+        line-height: 1.4;
     }
 
     header p {
@@ -468,8 +501,8 @@ footer p {
     }
 
     .club-logo {
-        width: 110px;
-        height: 110px;
+        width: 105px;
+        height: 105px;
     }
 
     nav a {
@@ -508,9 +541,10 @@ footer p {
     }
 
     .coach-photo img {
-        width: 140px;
-        height: 140px;
+        width: 150px;
+        height: 150px;
     }
+
 }
 
 </style>
@@ -522,15 +556,24 @@ footer p {
 
 
 <!-- =========================
-     HEADER
+     STARTING LOGO
+========================= -->
+
+<div class="starting-logo">
+
+    <img
+        src="image/logo.jpg"
+        alt="S-O Fearless Taekwondo Sports Club Logo"
+    >
+
+</div>
+
+
+<!-- =========================
+     MAIN HEADER
 ========================= -->
 
 <header>
-
-    <!-- IMPORTANT:
-         Your GitHub folder is "image"
-         and your file is "logo.jpg"
-    -->
 
     <img
         src="image/logo.jpg"
@@ -683,61 +726,55 @@ footer p {
     </p>
 
 
+    <!-- COACH PHOTO -->
+
+    <div class="coach-photo">
+
+        <img
+            src="image/coach photo.jpg"
+            alt="Coach Shubham K. Gandhi"
+        >
+
+    </div>
+
+
     <div class="coaches-container">
 
 
-        <!-- =====================
-             COACH SHUBHAM
-        ====================== -->
+        <!-- COACH SHUBHAM -->
 
         <div class="coach-card">
-
-            <div class="coach-photo">
-
-                <img
-                    src="image/coach photo.jpg"
-                    alt="Coach Shubham K. Gandhi"
-                >
-
-            </div>
 
             <h3>
                 Coach Shubham K. Gandhi
             </h3>
 
             <p>
-
                 <strong>
                     Taekwondo Qualification:
                 </strong><br>
 
                 2nd Dan Black Belt –
                 Kukkiwon, South Korea
-
             </p>
 
             <p>
-
                 <strong>
                     Professional Qualifications:
                 </strong><br>
 
                 DMLT, D.PE, P.T.C.PED
-
             </p>
 
             <p>
-
                 <strong>
                     Training Experience:
                 </strong><br>
 
                 2015 – Continuing
-
             </p>
 
             <p>
-
                 <strong>
                     Contact:
                 </strong><br>
@@ -751,11 +788,9 @@ footer p {
                 <a href="tel:9011191202">
                     9011191202
                 </a>
-
             </p>
 
             <p>
-
                 <strong>
                     Email:
                 </strong><br>
@@ -763,54 +798,37 @@ footer p {
                 <a href="mailto:gandhishubham70@gmail.com">
                     gandhishubham70@gmail.com
                 </a>
-
             </p>
 
         </div>
 
 
-        <!-- =====================
-             COACH OMKAR
-        ====================== -->
+        <!-- COACH OMKAR -->
 
         <div class="coach-card">
-
-            <div class="coach-photo">
-
-                <img
-                    src="image/coach photo.jpg"
-                    alt="Coach Omkar P. Joshi"
-                >
-
-            </div>
 
             <h3>
                 Coach Omkar P. Joshi
             </h3>
 
             <p>
-
                 <strong>
                     Taekwondo Qualification:
                 </strong><br>
 
                 1st Dan Black Belt –
                 Kukkiwon, South Korea
-
             </p>
 
             <p>
-
                 <strong>
                     Professional Qualifications:
                 </strong><br>
 
                 B.Com, P.T.C.P.Ed, D.P.E
-
             </p>
 
             <p>
-
                 <strong>
                     Contact:
                 </strong><br>
@@ -826,9 +844,7 @@ footer p {
     </div>
 
 
-    <!-- =========================
-         GENERAL CLUB INFORMATION
-    ========================== -->
+    <!-- GENERAL CLUB INFORMATION -->
 
     <div class="info-grid">
 
@@ -1174,7 +1190,6 @@ const certificates = {
 
     },
 
-
     "FTSO-2026-002": {
 
         name: "Sample Student 2",
@@ -1378,4 +1393,5 @@ document
 </script>
 
 </body>
+
 </html>
