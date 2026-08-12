@@ -695,98 +695,20 @@ footer p {
      HEADER
 ========================= -->
 
-<header>
+<div class="club-logo-section">
 
-    <a href="#home" class="header-logo">
+    <img src="./logo.jpg"
+         alt="S&O Fearless Taekwondo Sports Club Logo"
+         class="club-logo"
+         onerror="this.style.display='none'; document.getElementById('logoError').style.display='block';">
 
-        <img src="logo.jpg"
-             alt="S&O Fearless Taekwondo Sports Club Logo">
-
-        <div class="club-name">
-            <div class="main-name">
-                S&O FEARLESS
-            </div>
-
-            <div class="sub-name">
-                TAEKWONDO SPORTS CLUB
-            </div>
-        </div>
-
-    </a>
-
-
-    <nav>
-
-        <a href="#home">Home</a>
-
-        <a href="#verification">
-            Certificate Verification
-        </a>
-
-        <a href="#about">
-            About
-        </a>
-
-        <a href="#coaches">
-            Coaches
-        </a>
-
-        <a href="#credentials">
-            Credentials
-        </a>
-
-        <a href="#contact">
-            Contact
-        </a>
-
-    </nav>
-
-
-    <div class="menu-button"
-         onclick="toggleMenu()">
-
-        ☰
-
+    <div id="logoError" style="display:none; color:red; text-align:center;">
+        Logo not found.<br>
+        Make sure the file is named exactly <b>logo.jpg</b>
+        and is uploaded in the same folder as index.html.
     </div>
 
-
-    <div class="mobile-nav"
-         id="mobileNav">
-
-        <a href="#home"
-           onclick="closeMenu()">
-           Home
-        </a>
-
-        <a href="#verification"
-           onclick="closeMenu()">
-           Certificate Verification
-        </a>
-
-        <a href="#about"
-           onclick="closeMenu()">
-           About
-        </a>
-
-        <a href="#coaches"
-           onclick="closeMenu()">
-           Coaches
-        </a>
-
-        <a href="#credentials"
-           onclick="closeMenu()">
-           Credentials
-        </a>
-
-        <a href="#contact"
-           onclick="closeMenu()">
-           Contact
-        </a>
-
-    </div>
-
-</header>
-
+</div>
 
 <!-- =========================
      HOME
