@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -43,11 +42,6 @@ header {
     padding: 32px 15px 40px;
 }
 
-
-/* =====================================================
-   MAIN LOGO
-===================================================== */
-
 .header-logo {
     width: 190px;
     height: 190px;
@@ -55,16 +49,10 @@ header {
     object-fit: cover;
     object-position: center;
     display: block;
-    margin: 0 auto 18px auto;
+    margin: 0 auto 18px;
     border: 6px solid white;
-    background: transparent;
     box-shadow: 0 3px 12px rgba(0,0,0,0.30);
 }
-
-
-/* =====================================================
-   HEADER TEXT
-===================================================== */
 
 header h1 {
     font-size: 30px;
@@ -114,11 +102,6 @@ main {
     margin: 35px auto;
     padding: 0 15px;
 }
-
-
-/* =====================================================
-   COMMON CARD
-===================================================== */
 
 .card {
     background: white;
@@ -233,11 +216,6 @@ main {
     text-align: center;
 }
 
-
-/* =====================================================
-   VERIFIED LOGO
-===================================================== */
-
 .verified-logo {
     width: 160px;
     height: 160px;
@@ -245,16 +223,10 @@ main {
     object-fit: cover;
     object-position: center;
     display: block;
-    margin: 0 auto 18px auto;
+    margin: 0 auto 18px;
     border: 5px solid white;
-    background: transparent;
     box-shadow: 0 3px 12px rgba(0,0,0,0.25);
 }
-
-
-/* =====================================================
-   VERIFIED TEXT
-===================================================== */
 
 .verified-title {
     color: #218838;
@@ -299,7 +271,7 @@ main {
 
 
 /* =====================================================
-   INVALID
+   INVALID RESULT
 ===================================================== */
 
 .invalid {
@@ -314,7 +286,7 @@ main {
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 15px;
     background: #fff3f3;
     border: 4px solid #dc3545;
     display: flex;
@@ -332,7 +304,7 @@ main {
 
 
 /* =====================================================
-   OWNER / COACH BUTTON
+   OWNER BUTTON
 ===================================================== */
 
 .owner-section {
@@ -357,7 +329,7 @@ main {
 
 
 /* =====================================================
-   COACH CARDS
+   COACHES
 ===================================================== */
 
 .coaches-container {
@@ -395,10 +367,6 @@ main {
     word-break: break-word;
 }
 
-.coach-card a:hover {
-    text-decoration: underline;
-}
-
 
 /* =====================================================
    INFO GRID
@@ -422,13 +390,6 @@ main {
     display: block;
     color: #123d70;
     margin-bottom: 5px;
-}
-
-.info-card a {
-    color: #123d70;
-    font-weight: bold;
-    text-decoration: none;
-    word-break: break-word;
 }
 
 
@@ -546,17 +507,15 @@ footer strong {
     .header-logo {
         width: 135px;
         height: 135px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid white;
+    }
+
+    .verified-logo {
+        width: 135px;
+        height: 135px;
     }
 
     header h1 {
         font-size: 22px;
-    }
-
-    header p {
-        font-size: 14px;
     }
 
     nav a {
@@ -565,22 +524,12 @@ footer strong {
         font-size: 12px;
     }
 
-    main {
-        margin-top: 25px;
-    }
-
     .card {
         padding: 25px 16px;
     }
 
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .coaches-container {
-        grid-template-columns: 1fr;
-    }
-
+    .features,
+    .coaches-container,
     .info-grid {
         grid-template-columns: 1fr;
     }
@@ -597,70 +546,22 @@ footer strong {
     .detail-value {
         text-align: left;
     }
-
-    .verified-logo {
-        width: 135px;
-        height: 135px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid white;
-    }
-
-}
-
-
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
-@media (max-width: 400px) {
-
-    .header-logo {
-        width: 115px;
-        height: 115px;
-    }
-
-    header h1 {
-        font-size: 19px;
-    }
-
-    .section-title {
-        font-size: 23px;
-    }
-
-}
-
-
-/* =====================================================
-   ENSURE LOGOS ARE CIRCULAR
-===================================================== */
-
-.header-logo,
-.verified-logo {
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    clip-path: circle(50%);
 }
 
 </style>
 
 </head>
 
-
 <body>
 
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<!-- HEADER -->
 
 <header>
 
-    <img
-        src="image/logo.jpg"
-        alt="S&O Fearless Taekwondo Sports Club Logo"
-        class="header-logo"
-    >
+    <img src="image/logo.jpg"
+         alt="S&O Fearless Taekwondo Sports Club Logo"
+         class="header-logo">
 
     <h1>S&O FEARLESS TAEKWONDO SPORTS CLUB</h1>
 
@@ -671,9 +572,7 @@ footer strong {
 </header>
 
 
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -690,23 +589,20 @@ footer strong {
 <main>
 
 
-<!-- =====================================================
-     HOME
-===================================================== -->
+<!-- HOME -->
 
 <section class="card welcome" id="home">
 
     <h2>Welcome to S&O Fearless Taekwondo Sports Club</h2>
 
     <p>
-        Welcome to the official certificate verification
-        portal of S&O Fearless Taekwondo Sports Club.
+        Welcome to the official certificate verification portal
+        of S&O Fearless Taekwondo Sports Club.
     </p>
 
     <p>
-        Students, parents, institutions and organizations
-        can use this website to verify certificates issued
-        by the club.
+        Students, parents, institutions and organizations can use
+        this website to verify certificates issued by the club.
     </p>
 
     <span class="training-badge">
@@ -716,17 +612,14 @@ footer strong {
 </section>
 
 
-<!-- =====================================================
-     VERIFICATION
-===================================================== -->
+<!-- CERTIFICATE VERIFICATION -->
 
 <section class="card" id="verification">
 
     <h2 class="section-title">Verify Your Certificate</h2>
 
     <p class="section-subtitle">
-        Enter your Certificate Number below to verify
-        the authenticity of your certificate.
+        Enter your Certificate Number to verify your certificate.
     </p>
 
     <div class="verify-box">
@@ -734,16 +627,13 @@ footer strong {
         <input
             type="text"
             id="certificateId"
-            placeholder="Enter Certificate Number"
+            placeholder="Example: 2529-SOFT-SC-0000"
             autocomplete="off"
         >
 
         <br>
 
-        <button
-            class="verify-btn"
-            onclick="verifyCertificate()"
-        >
+        <button class="verify-btn" onclick="verifyCertificate()">
             🔍 Verify Certificate
         </button>
 
@@ -754,9 +644,7 @@ footer strong {
 </section>
 
 
-<!-- =====================================================
-     COACH BUTTON
-===================================================== -->
+<!-- COACH BUTTON -->
 
 <div class="owner-section">
 
@@ -767,53 +655,40 @@ footer strong {
 </div>
 
 
-<!-- =====================================================
-     COACHES
-===================================================== -->
+<!-- COACHES -->
 
 <section class="card" id="coaches">
 
     <div class="coaches-container">
-
 
         <div class="coach-card">
 
             <h3>Coach Shubham K. Gandhi</h3>
 
             <p>
-                <strong>Taekwondo Qualification:</strong>
-                <br>
-                2nd Dan Black Belt –
-                Kukkiwon, South Korea
+                <strong>Taekwondo Qualification:</strong><br>
+                2nd Dan Black Belt – Kukkiwon, South Korea
             </p>
 
             <p>
-                <strong>Professional Qualifications:</strong>
-                <br>
+                <strong>Professional Qualifications:</strong><br>
                 DMLT, D.PE, P.T.C.PED
             </p>
 
             <p>
-                <strong>Training Experience:</strong>
-                <br>
+                <strong>Training Experience:</strong><br>
                 2015 – Continuing
             </p>
 
             <p>
-                <strong>Contact:</strong>
-                <br>
-
+                <strong>Contact:</strong><br>
                 <a href="tel:9922484409">9922484409</a>
-
-                &nbsp; | &nbsp;
-
+                |
                 <a href="tel:7798568623">7798568623</a>
             </p>
 
             <p>
-                <strong>Email:</strong>
-                <br>
-
+                <strong>Email:</strong><br>
                 <a href="mailto:gandhishubham70@gmail.com">
                     gandhishubham70@gmail.com
                 </a>
@@ -827,25 +702,18 @@ footer strong {
             <h3>Coach Omkar P. Joshi</h3>
 
             <p>
-                <strong>Taekwondo Qualification:</strong>
-                <br>
-                1st Dan Black Belt –
-                Kukkiwon, South Korea
+                <strong>Taekwondo Qualification:</strong><br>
+                1st Dan Black Belt – Kukkiwon, South Korea
             </p>
 
             <p>
-                <strong>Professional Qualifications:</strong>
-                <br>
+                <strong>Professional Qualifications:</strong><br>
                 B.Com, P.T.C.P.Ed, D.P.E
             </p>
 
             <p>
-                <strong>Contact:</strong>
-                <br>
-
-                <a href="tel:7798568623">
-                    7798568623
-                </a>
+                <strong>Contact:</strong><br>
+                <a href="tel:7798568623">7798568623</a>
             </p>
 
         </div>
@@ -871,13 +739,8 @@ footer strong {
         </div>
 
         <div class="info-card">
-
             <strong>Email</strong>
-
-            <a href="mailto:gandhishubham70@gmail.com">
-                gandhishubham70@gmail.com
-            </a>
-
+            gandhishubham70@gmail.com
         </div>
 
     </div>
@@ -885,65 +748,37 @@ footer strong {
 </section>
 
 
-<!-- =====================================================
-     ABOUT
-===================================================== -->
+<!-- ABOUT -->
 
 <section class="card" id="about">
 
     <h2 class="section-title">About Our Club</h2>
 
     <p class="about-text">
-
-        S&O Fearless Taekwondo Sports Club is dedicated
-        to Taekwondo and sports training with a focus
-        on discipline, fitness, confidence, self-defence,
-        physical development and skill development.
-
+        S&O Fearless Taekwondo Sports Club is dedicated to Taekwondo
+        and sports training with a focus on discipline, fitness,
+        confidence, self-defence, physical development and skill development.
     </p>
 
 
     <div class="features">
 
         <div class="feature">
-
             <div class="feature-icon">🥋</div>
-
             <h3>Taekwondo Training</h3>
-
-            <p>
-                Taekwondo training and
-                technical skill development.
-            </p>
-
+            <p>Taekwondo training and technical skill development.</p>
         </div>
 
-
         <div class="feature">
-
             <div class="feature-icon">🏆</div>
-
             <h3>Sports & Fitness</h3>
-
-            <p>
-                Sports, fitness and
-                physical development.
-            </p>
-
+            <p>Sports, fitness and physical development.</p>
         </div>
 
-
         <div class="feature">
-
             <div class="feature-icon">✅</div>
-
             <h3>Certificate Verification</h3>
-
-            <p>
-                Verify certificates using
-                their Certificate Number.
-            </p>
-
+            <p>Verify certificates using their unique Certificate Number.</p>
         </div>
 
     </div>
@@ -951,67 +786,31 @@ footer strong {
 </section>
 
 
-<!-- =====================================================
-     CREDENTIALS
-===================================================== -->
+<!-- REGISTRATIONS -->
 
 <section class="card" id="credentials">
 
-    <h2 class="section-title">
-        Registrations & Credentials
-    </h2>
-
-    <p class="section-subtitle">
-        Club information and professional credentials
-    </p>
-
+    <h2 class="section-title">Registrations & Credentials</h2>
 
     <div class="credential-card">
-
         <strong>🏛️ Trademark Registration</strong>
-
         Government of India
-
-        <br>
-
-        <small>
-            Trademark registration details can be
-            displayed here.
-        </small>
-
     </div>
 
-
     <div class="credential-card">
-
         <strong>🏢 Udyam Registration</strong>
-
         Government of India
-
-        <br>
-
-        <small>
-            Udyam registration details can be
-            displayed here.
-        </small>
-
     </div>
 
-
     <div class="credential-card">
-
         <strong>🏅 Taekwondo Credentials</strong>
-
         Kukkiwon, South Korea
-
     </div>
 
 </section>
 
 
-<!-- =====================================================
-     CONTACT
-===================================================== -->
+<!-- CONTACT -->
 
 <section class="card contact" id="contact">
 
@@ -1024,13 +823,11 @@ footer strong {
     <p>Sangamner, Maharashtra, India</p>
 
     <p>
-        📞
-        <a href="tel:9922484409">9922484409</a>
+        📞 <a href="tel:9922484409">9922484409</a>
     </p>
 
     <p>
-        📞
-        <a href="tel:9011191202">9011191202</a>
+        📞 <a href="tel:9011191202">9011191202</a>
     </p>
 
     <p>
@@ -1042,13 +839,10 @@ footer strong {
 
 </section>
 
-
 </main>
 
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -1065,44 +859,40 @@ footer strong {
 </footer>
 
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
+<!-- JAVASCRIPT -->
 
 <script>
 
-/*
-=========================================================
-CERTIFICATE DATABASE
+/* =====================================================
+   CERTIFICATE DATABASE
 
-ONLY THESE 5 FIELDS:
+   ONLY 5 FIELDS:
 
-1. CERTIFICATE NO.
-2. STUDENT NAME
-3. DOB
-4. DATE OF ISSUE
-5. CERTIFICATE OF
+   1. CERTIFICATE NO.
+   2. STUDENT NAME
+   3. DOB
+   4. DATE OF ISSUE
+   5. CERTIFICATE OF
 
-Add future certificates in the same format.
-=========================================================
-*/
+   ADD YOUR STUDENTS BELOW
+===================================================== */
 
 const certificates = {
 
-    "STC001": {
-        certificateNo: "STC001",
-        studentName: "Sample Student",
-        dob: "01 January 2010",
-        dateOfIssue: "12 August 2026",
-        certificateOf: "Taekwondo Training"
+    "2529-SOFT-SC-0000": {
+        certificateNo: "2529-SOFT-SC-0000",
+        studentName: "ENTER STUDENT NAME",
+        dob: "ENTER DOB",
+        dateOfIssue: "ENTER DATE OF ISSUE",
+        certificateOf: "ENTER CERTIFICATE OF"
     },
 
-    "STC002": {
-        certificateNo: "STC002",
-        studentName: "Sample Student 2",
-        dob: "15 March 2011",
-        dateOfIssue: "12 August 2026",
-        certificateOf: "1st Dan Black Belt"
+    "2529-SOFT-SC-0001": {
+        certificateNo: "2529-SOFT-SC-0001",
+        studentName: "ENTER STUDENT NAME",
+        dob: "ENTER DOB",
+        dateOfIssue: "ENTER DATE OF ISSUE",
+        certificateOf: "ENTER CERTIFICATE OF"
     }
 
 };
@@ -1166,19 +956,15 @@ function verifyCertificate() {
                 </div>
 
                 <p class="verified-message">
-                    This certificate has been successfully
-                    verified by S&O Fearless Taekwondo
-                    Sports Club.
+                    This certificate has been successfully verified
+                    by S&O Fearless Taekwondo Sports Club.
                 </p>
 
 
                 <div class="certificate-details">
 
 
-                    <!-- 1. CERTIFICATE NO. -->
-
                     <div class="detail-row">
-
                         <span class="detail-label">
                             CERTIFICATE NO.
                         </span>
@@ -1186,14 +972,10 @@ function verifyCertificate() {
                         <span class="detail-value">
                             ${certificate.certificateNo}
                         </span>
-
                     </div>
 
 
-                    <!-- 2. STUDENT NAME -->
-
                     <div class="detail-row">
-
                         <span class="detail-label">
                             STUDENT NAME
                         </span>
@@ -1201,14 +983,10 @@ function verifyCertificate() {
                         <span class="detail-value">
                             ${certificate.studentName}
                         </span>
-
                     </div>
 
 
-                    <!-- 3. DOB -->
-
                     <div class="detail-row">
-
                         <span class="detail-label">
                             DOB
                         </span>
@@ -1216,14 +994,10 @@ function verifyCertificate() {
                         <span class="detail-value">
                             ${certificate.dob}
                         </span>
-
                     </div>
 
 
-                    <!-- 4. DATE OF ISSUE -->
-
                     <div class="detail-row">
-
                         <span class="detail-label">
                             DATE OF ISSUE
                         </span>
@@ -1231,14 +1005,10 @@ function verifyCertificate() {
                         <span class="detail-value">
                             ${certificate.dateOfIssue}
                         </span>
-
                     </div>
 
 
-                    <!-- 5. CERTIFICATE OF -->
-
                     <div class="detail-row">
-
                         <span class="detail-label">
                             CERTIFICATE OF
                         </span>
@@ -1246,7 +1016,6 @@ function verifyCertificate() {
                         <span class="detail-value">
                             ${certificate.certificateOf}
                         </span>
-
                     </div>
 
 
@@ -1287,7 +1056,7 @@ function verifyCertificate() {
 
 
 /* =====================================================
-   ENTER KEY VERIFICATION
+   PRESS ENTER TO VERIFY
 ===================================================== */
 
 document
@@ -1301,7 +1070,6 @@ document
 });
 
 </script>
-
 
 </body>
 </html>
