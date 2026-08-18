@@ -1,6 +1,6 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,6 @@
 <title>S&O FEARLESS TAEKWONDO SPORTS CLUB | Certificate Verification</title>
 
 <style>
-
-/* =====================================================
-   BASIC
-===================================================== */
 
 * {
     box-sizing: border-box;
@@ -30,11 +26,6 @@ body {
     line-height: 1.6;
 }
 
-
-/* =====================================================
-   HEADER
-===================================================== */
-
 header {
     background: linear-gradient(135deg, #07152d, #123d70);
     color: white;
@@ -47,7 +38,6 @@ header {
     height: 190px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center;
     display: block;
     margin: 0 auto 18px;
     border: 6px solid white;
@@ -65,11 +55,6 @@ header p {
     opacity: 0.95;
 }
 
-
-/* =====================================================
-   NAVIGATION
-===================================================== */
-
 nav {
     background: #07101f;
     text-align: center;
@@ -77,7 +62,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.20);
 }
 
 nav a {
@@ -92,11 +76,6 @@ nav a:hover {
     color: #f5a623;
 }
 
-
-/* =====================================================
-   MAIN
-===================================================== */
-
 main {
     max-width: 1000px;
     margin: 35px auto;
@@ -110,11 +89,6 @@ main {
     margin-bottom: 25px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
-
-
-/* =====================================================
-   WELCOME
-===================================================== */
 
 .welcome {
     text-align: center;
@@ -141,11 +115,6 @@ main {
     font-weight: bold;
 }
 
-
-/* =====================================================
-   SECTION TITLES
-===================================================== */
-
 .section-title {
     text-align: center;
     color: #123d70;
@@ -158,11 +127,6 @@ main {
     color: #777;
     margin-bottom: 22px;
 }
-
-
-/* =====================================================
-   VERIFICATION
-===================================================== */
 
 .verify-box {
     text-align: center;
@@ -181,7 +145,6 @@ main {
 
 .verify-box input:focus {
     border-color: #123d70;
-    box-shadow: 0 0 0 3px rgba(18,61,112,0.10);
 }
 
 .verify-btn {
@@ -199,16 +162,12 @@ main {
     background: #07152d;
 }
 
-
-/* =====================================================
-   RESULT
-===================================================== */
-
 #result {
     margin-top: 25px;
 }
 
-.result-box {
+.result-box,
+.invalid {
     background: white;
     border-radius: 15px;
     padding: 28px 20px;
@@ -221,7 +180,6 @@ main {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center;
     display: block;
     margin: 0 auto 18px;
     border: 5px solid white;
@@ -238,11 +196,6 @@ main {
 .verified-message {
     color: #555;
 }
-
-
-/* =====================================================
-   CERTIFICATE DETAILS
-===================================================== */
 
 .certificate-details {
     text-align: left;
@@ -269,19 +222,6 @@ main {
     color: #222;
 }
 
-
-/* =====================================================
-   INVALID RESULT
-===================================================== */
-
-.invalid {
-    background: white;
-    border-radius: 15px;
-    padding: 30px 20px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.10);
-    text-align: center;
-}
-
 .invalid-icon {
     width: 85px;
     height: 85px;
@@ -302,11 +242,6 @@ main {
     margin-bottom: 10px;
 }
 
-
-/* =====================================================
-   OWNER BUTTON
-===================================================== */
-
 .owner-section {
     text-align: center;
     margin: 10px 0 30px;
@@ -320,17 +255,8 @@ main {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    border-radius: 8px;
 }
-
-.owner-button:hover {
-    background: #e59512;
-}
-
-
-/* =====================================================
-   COACHES
-===================================================== */
 
 .coaches-container {
     display: grid;
@@ -345,10 +271,9 @@ main {
     border-left: 5px solid #123d70;
 }
 
-.coach-card h3 {
+.coach-card h3,
+.coach-card strong {
     color: #123d70;
-    font-size: 20px;
-    margin-bottom: 15px;
 }
 
 .coach-card p {
@@ -356,21 +281,12 @@ main {
     color: #444;
 }
 
-.coach-card strong {
-    color: #123d70;
-}
-
-.coach-card a {
+.coach-card a,
+.info-card a {
     color: #123d70;
     font-weight: bold;
     text-decoration: none;
-    word-break: break-word;
 }
-
-
-/* =====================================================
-   INFO GRID
-===================================================== */
 
 .info-grid {
     display: grid;
@@ -392,22 +308,12 @@ main {
     margin-bottom: 5px;
 }
 
-
-/* =====================================================
-   ABOUT
-===================================================== */
-
 .about-text {
     text-align: center;
     color: #666;
     max-width: 800px;
     margin: auto;
 }
-
-
-/* =====================================================
-   FEATURES
-===================================================== */
 
 .features {
     display: grid;
@@ -440,11 +346,6 @@ main {
     color: #666;
 }
 
-
-/* =====================================================
-   CREDENTIALS
-===================================================== */
-
 .credential-card {
     background: #f5f7fb;
     padding: 18px;
@@ -458,11 +359,6 @@ main {
     color: #123d70;
     margin-bottom: 5px;
 }
-
-
-/* =====================================================
-   CONTACT
-===================================================== */
 
 .contact {
     text-align: center;
@@ -479,11 +375,6 @@ main {
     text-decoration: none;
 }
 
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
 footer {
     background: #07152d;
     color: white;
@@ -496,11 +387,6 @@ footer {
 footer strong {
     color: #f5a623;
 }
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
 
 @media (max-width: 700px) {
 
@@ -546,16 +432,13 @@ footer strong {
     .detail-value {
         text-align: left;
     }
+
 }
 
 </style>
-
 </head>
 
 <body>
-
-
-<!-- HEADER -->
 
 <header>
 
@@ -564,15 +447,11 @@ footer strong {
          class="header-logo">
 
     <h1>S&O FEARLESS TAEKWONDO SPORTS CLUB</h1>
-
     <p>Official Certificate Verification Portal</p>
-
     <p>Training Since 2015</p>
 
 </header>
 
-
-<!-- NAVIGATION -->
 
 <nav>
 
@@ -589,8 +468,6 @@ footer strong {
 <main>
 
 
-<!-- HOME -->
-
 <section class="card welcome" id="home">
 
     <h2>Welcome to S&O Fearless Taekwondo Sports Club</h2>
@@ -605,14 +482,10 @@ footer strong {
         this website to verify certificates issued by the club.
     </p>
 
-    <span class="training-badge">
-        🥋 Training Since 2015
-    </span>
+    <span class="training-badge">🥋 Training Since 2015</span>
 
 </section>
 
-
-<!-- CERTIFICATE VERIFICATION -->
 
 <section class="card" id="verification">
 
@@ -644,8 +517,6 @@ footer strong {
 </section>
 
 
-<!-- COACH BUTTON -->
-
 <div class="owner-section">
 
     <a href="#coaches" class="owner-button">
@@ -654,8 +525,6 @@ footer strong {
 
 </div>
 
-
-<!-- COACHES -->
 
 <section class="card" id="coaches">
 
@@ -740,15 +609,15 @@ footer strong {
 
         <div class="info-card">
             <strong>Email</strong>
-            gandhishubham70@gmail.com
+            <a href="mailto:gandhishubham70@gmail.com">
+                gandhishubham70@gmail.com
+            </a>
         </div>
 
     </div>
 
 </section>
 
-
-<!-- ABOUT -->
 
 <section class="card" id="about">
 
@@ -759,7 +628,6 @@ footer strong {
         and sports training with a focus on discipline, fitness,
         confidence, self-defence, physical development and skill development.
     </p>
-
 
     <div class="features">
 
@@ -778,15 +646,13 @@ footer strong {
         <div class="feature">
             <div class="feature-icon">✅</div>
             <h3>Certificate Verification</h3>
-            <p>Verify certificates using their unique Certificate Number.</p>
+            <p>Verify certificates using their Certificate Number.</p>
         </div>
 
     </div>
 
 </section>
 
-
-<!-- REGISTRATIONS -->
 
 <section class="card" id="credentials">
 
@@ -810,25 +676,17 @@ footer strong {
 </section>
 
 
-<!-- CONTACT -->
-
 <section class="card contact" id="contact">
 
     <h2 class="section-title">Contact Us</h2>
 
-    <p>
-        <strong>S&O Fearless Taekwondo Sports Club</strong>
-    </p>
+    <p><strong>S&O Fearless Taekwondo Sports Club</strong></p>
 
     <p>Sangamner, Maharashtra, India</p>
 
-    <p>
-        📞 <a href="tel:9922484409">9922484409</a>
-    </p>
+    <p>📞 <a href="tel:9922484409">9922484409</a></p>
 
-    <p>
-        📞 <a href="tel:9011191202">9011191202</a>
-    </p>
+    <p>📞 <a href="tel:9011191202">9011191202</a></p>
 
     <p>
         📧
@@ -839,10 +697,9 @@ footer strong {
 
 </section>
 
+
 </main>
 
-
-<!-- FOOTER -->
 
 <footer>
 
@@ -859,50 +716,21 @@ footer strong {
 </footer>
 
 
-<!-- JAVASCRIPT -->
-
 <script>
 
 /* =====================================================
-   CERTIFICATE DATABASE
-
-   ONLY 5 FIELDS:
-
-   1. CERTIFICATE NO.
-   2. STUDENT NAME
-   3. DOB
-   4. DATE OF ISSUE
-   5. CERTIFICATE OF
-
-   ADD YOUR STUDENTS BELOW
+   GOOGLE SHEETS APPS SCRIPT WEB APP URL
 ===================================================== */
 
-const certificates = {
-
-    "2529-SOFT-SC-0000": {
-        certificateNo: "2529-SOFT-SC-0000",
-        studentName: "ENTER STUDENT NAME",
-        dob: "ENTER DOB",
-        dateOfIssue: "ENTER DATE OF ISSUE",
-        certificateOf: "ENTER CERTIFICATE OF"
-    },
-
-    "2529-SOFT-SC-0001": {
-        certificateNo: "2529-SOFT-SC-0001",
-        studentName: "ENTER STUDENT NAME",
-        dob: "ENTER DOB",
-        dateOfIssue: "ENTER DATE OF ISSUE",
-        certificateOf: "ENTER CERTIFICATE OF"
-    }
-
-};
+const API_URL =
+"https://script.google.com/macros/s/AKfycby_cFoOJV3NsmKbw1OkzcZsOdZWw13Xz_sspXUo_z15_h33Sd-sbS_Bg0JBdsZwvDXy9g/exec";
 
 
 /* =====================================================
-   VERIFY CERTIFICATE
+   VERIFY CERTIFICATE FROM GOOGLE SHEETS
 ===================================================== */
 
-function verifyCertificate() {
+async function verifyCertificate() {
 
     const input = document
         .getElementById("certificateId")
@@ -910,11 +738,170 @@ function verifyCertificate() {
         .trim()
         .toUpperCase();
 
-    const result = document
-        .getElementById("result");
+    const result =
+        document.getElementById("result");
 
 
     if (input === "") {
+
+        result.innerHTML = `
+            <div class="invalid">
+                <div class="invalid-icon">!</div>
+                <h3>Please Enter Certificate Number</h3>
+                <p>Enter a Certificate Number to continue.</p>
+            </div>
+        `;
+
+        return;
+    }
+
+
+    result.innerHTML = `
+        <div class="result-box">
+            <p><strong>🔍 Verifying Certificate...</strong></p>
+        </div>
+    `;
+
+
+    try {
+
+        const response = await fetch(
+            API_URL +
+            "?certificateNo=" +
+            encodeURIComponent(input)
+        );
+
+        const data = await response.json();
+
+
+        if (data.found) {
+
+            result.innerHTML = `
+
+                <div class="result-box">
+
+                    <img
+                        src="image/logo.jpg"
+                        alt="Club Logo"
+                        class="verified-logo"
+                    >
+
+                    <div class="verified-title">
+                        ✓ Certificate Verified
+                    </div>
+
+                    <p class="verified-message">
+                        This certificate has been successfully verified
+                        by S&O Fearless Taekwondo Sports Club.
+                    </p>
+
+
+                    <div class="certificate-details">
+
+
+                        <div class="detail-row">
+
+                            <span class="detail-label">
+                                CERTIFICATE NO.
+                            </span>
+
+                            <span class="detail-value">
+                                ${data.certificateNo}
+                            </span>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span class="detail-label">
+                                STUDENT NAME
+                            </span>
+
+                            <span class="detail-value">
+                                ${data.studentName}
+                            </span>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span class="detail-label">
+                                DOB
+                            </span>
+
+                            <span class="detail-value">
+                                ${data.dob}
+                            </span>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span class="detail-label">
+                                DATE OF ISSUE
+                            </span>
+
+                            <span class="detail-value">
+                                ${data.dateOfIssue}
+                            </span>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span class="detail-label">
+                                CERTIFICATE OF
+                            </span>
+
+                            <span class="detail-value">
+                                ${data.certificateOf}
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }
+
+        else {
+
+            result.innerHTML = `
+
+                <div class="invalid">
+
+                    <div class="invalid-icon">✕</div>
+
+                    <h3>Certificate Not Found</h3>
+
+                    <p>
+                        The Certificate Number
+                        <strong>${input}</strong>
+                        could not be verified.
+                    </p>
+
+                    <p>
+                        Please check the Certificate Number
+                        and try again.
+                    </p>
+
+                </div>
+
+            `;
+
+        }
+
+    }
+
+    catch (error) {
 
         result.innerHTML = `
 
@@ -922,133 +909,18 @@ function verifyCertificate() {
 
                 <div class="invalid-icon">!</div>
 
-                <h3>Please Enter Certificate Number</h3>
+                <h3>Verification Error</h3>
 
                 <p>
-                    Enter a Certificate Number to continue.
+                    Unable to connect to the certificate database.
+                    Please try again later.
                 </p>
 
             </div>
 
         `;
 
-        return;
-    }
-
-
-    const certificate = certificates[input];
-
-
-    if (certificate) {
-
-        result.innerHTML = `
-
-            <div class="result-box">
-
-                <img
-                    src="image/logo.jpg"
-                    alt="Club Logo"
-                    class="verified-logo"
-                >
-
-                <div class="verified-title">
-                    ✓ Certificate Verified
-                </div>
-
-                <p class="verified-message">
-                    This certificate has been successfully verified
-                    by S&O Fearless Taekwondo Sports Club.
-                </p>
-
-
-                <div class="certificate-details">
-
-
-                    <div class="detail-row">
-                        <span class="detail-label">
-                            CERTIFICATE NO.
-                        </span>
-
-                        <span class="detail-value">
-                            ${certificate.certificateNo}
-                        </span>
-                    </div>
-
-
-                    <div class="detail-row">
-                        <span class="detail-label">
-                            STUDENT NAME
-                        </span>
-
-                        <span class="detail-value">
-                            ${certificate.studentName}
-                        </span>
-                    </div>
-
-
-                    <div class="detail-row">
-                        <span class="detail-label">
-                            DOB
-                        </span>
-
-                        <span class="detail-value">
-                            ${certificate.dob}
-                        </span>
-                    </div>
-
-
-                    <div class="detail-row">
-                        <span class="detail-label">
-                            DATE OF ISSUE
-                        </span>
-
-                        <span class="detail-value">
-                            ${certificate.dateOfIssue}
-                        </span>
-                    </div>
-
-
-                    <div class="detail-row">
-                        <span class="detail-label">
-                            CERTIFICATE OF
-                        </span>
-
-                        <span class="detail-value">
-                            ${certificate.certificateOf}
-                        </span>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        `;
-
-    } else {
-
-        result.innerHTML = `
-
-            <div class="invalid">
-
-                <div class="invalid-icon">✕</div>
-
-                <h3>Certificate Not Found</h3>
-
-                <p>
-                    The Certificate Number
-                    <strong>${input}</strong>
-                    could not be verified.
-                </p>
-
-                <p>
-                    Please check the Certificate Number
-                    and try again.
-                </p>
-
-            </div>
-
-        `;
+        console.error(error);
 
     }
 
@@ -1073,3 +945,4 @@ document
 
 </body>
 </html>
+```
